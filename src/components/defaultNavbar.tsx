@@ -1,16 +1,14 @@
 import React from "react";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  Button,
-  IconButton,
-  List,
-  ListItem,
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
+import { Button } from "@material-tailwind/react";
+import { IconButton } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
+import { Navbar, Collapse } from "@material-tailwind/react";
+import { List, ListItem } from "@material-tailwind/react";
+import { 
+  Menu, 
+  MenuHandler, 
+  MenuList, 
+  MenuItem 
 } from "@material-tailwind/react";
 import {
   ChevronDownIcon,
@@ -223,18 +221,18 @@ export default function Example() {
           </div>
           <div className="hidden gap-2 lg:flex">
             <a href="./login">
-              <Button variant="text" size="sm" color="blue-gray">
+              <Button variant="filled" size="sm" color="blue" className="normal-case">
                 Sign In
               </Button>
             </a>
             <a href="/astro-launch-ui/signup">
-              <Button size="sm" color="dark">
+              <Button size="sm" color="blue" variant="filled" className="hidden lg:inline-block normal-case">
                 Sign Up
               </Button>
             </a>
           </div>
           <IconButton
-            variant="text"
+            variant="filled"
             color="blue-gray"
             className="lg:hidden"
             onClick={() => setOpenNav(!openNav)}
@@ -250,12 +248,12 @@ export default function Example() {
           <NavList />
           <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
             <a href="/astro-launch-ui/login">
-              <Button variant="outlined" size="sm" color="dark" fullWidth>
+              <Button variant="outlined" size="sm" color="blue" fullWidth className="normal-case">
                 Sign In
               </Button>
             </a>
             <a href="/astro-launch-ui/signup">
-              <Button size="sm" fullWidth color="dark">
+              <Button size="sm" fullWidth color="blue" className="normal-case">
                 Sign Up
               </Button>
             </a>

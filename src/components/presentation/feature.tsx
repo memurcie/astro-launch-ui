@@ -56,7 +56,7 @@ export function FeatureLanding() {
     <section className="px-4 mt-12">
       <div className="container mx-auto mb-20 text-center">
         <div className="flex justify-center align-center relative z-5">
-          <Typography color="dark" className="text-xl mr-2 font-normal">
+          <Typography color="gray" className="text-xl mr-2 font-normal">
             Design & Code by 
           </Typography>
           <svg width="112" height="34" viewBox="0 0 112 34" fill="none" xmlns="http://www.w3.org/2000/svg">

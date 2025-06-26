@@ -338,17 +338,17 @@ export default function ComplexNavbar() {
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
         <a href="https://discord.gg/WCvQWMwT" target="_blank">
-          <Button size="sm" color="dark" variant="text">
+          <Button size="sm" color="blue" variant="text">
             <i className="fab fa-discord text-lg leading-none" aria-hidden="true"></i>
           </Button>
         </a>
         <a href="https://github.com/creativetimofficial/astro-launch-ui" target="_blank">
-          <Button size="sm" color="dark" variant="text">
+          <Button size="sm" color="blue" variant="text">
             <i className="fab fa-github text-xl leading-none" aria-hidden="true"></i>
           </Button>
         </a>
         <a href="/astro-launch-ui/#examplePages">
-          <Button color="dark">Get started</Button>
+          <Button color="blue">Get started</Button>
         </a>
       </div>
       <Collapse open={isNavOpen} className="overflow-scroll">

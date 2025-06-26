@@ -25,7 +25,7 @@ export function HeroPresentation() {
                 New
               </Typography>
               <Typography
-                color="dark"
+                color="blue-gray"
                 variant="small"
                 className="flex items-center font-bold uppercase"
               >
@@ -44,7 +44,7 @@ export function HeroPresentation() {
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
               <a href="#pricing">
-                <Button color="dark" className="flex items-center">
+                <Button color="blue" className="flex items-center">
                   Get Started
                 </Button>
               </a>

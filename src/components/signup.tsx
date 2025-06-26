@@ -17,7 +17,7 @@ export function SignUp() {
           </Typography>
           <form action="#" className="mx-auto max-w-[24rem] text-left">
             <Input color="black" size="lg" label="Email" type="email" name="email" />
-            <Button color="dark" size="lg" className="mt-4" fullWidth>
+            <Button color="blue" size="lg" className="mt-4" fullWidth>
               get started
             </Button>
             <div className="my-6 flex w-full items-center gap-2">

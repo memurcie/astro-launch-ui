@@ -1,7 +1,9 @@
 import ThemeProvider from "./theme-provider";
 import Navbar from "./defaultNavbar"
  
-import { Typography, Input, Checkbox, Button } from "@material-tailwind/react";
+import { Typography, Button } from "@material-tailwind/react";
+import { Input } from "@material-tailwind/react/components/Input";
+import { Checkbox } from "@material-tailwind/react/components/Checkbox";
 
 export function SignIn() {
   return (
@@ -18,26 +20,45 @@ export function SignIn() {
 
           <form action="#" className="mx-auto max-w-[24rem] text-left">
             <div className="mb-4">
-              <Input color="black" size="lg" label="Email" type="email" name="email" />
+              <Input 
+                variant="outlined"
+                color="blue"
+                size="lg" 
+                label="Email" 
+                type="email" 
+                name="email" 
+                crossOrigin="anonymous"
+              />
             </div>
             <div className="mb-4">
-              <Input color="black" size="lg" label="Password" type="password" name="password" />
+              <Input 
+                variant="outlined"
+                color="blue"
+                size="lg" 
+                label="Password" 
+                type="password" 
+                name="password" 
+                crossOrigin="anonymous"
+              />
             </div>
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div className="-ml-3">
-                <Checkbox
-                  color="blue-gray"
-                  label="Subscribe to newsletter"
-                  labelProps={{
-                    className: "font-normal",
-                  }}
-                />
+                <div className="flex items-center">
+                  <Checkbox 
+                    color="blue"
+                    crossOrigin="anonymous"
+                    className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <label className="ml-2 block text-sm text-gray-900 dark:text-gray-100">
+                    Remember Me
+                  </label>
+                </div>
               </div>
               <Typography as="a" href="#" color="blue-gray" className="font-medium">
                 Forgot password
               </Typography>
             </div>
-            <Button color="dark" size="lg" className="mt-6" fullWidth>
+            <Button color="blue" size="lg" className="mt-6" fullWidth>
               sign in
             </Button>
             <Button

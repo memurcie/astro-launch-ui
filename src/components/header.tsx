@@ -1,4 +1,6 @@
 
+import { Button } from "@material-tailwind/react";
+
 interface Props {
   bgImage: string;
   title: string;
@@ -32,7 +34,13 @@ export default function PageHeader({
               <p className={pColor}>
                 {description}
               </p>
-              <button className="btn btn-outline-white">Explore</button>
+              <Button 
+                color="gray" 
+                variant="outlined"
+                className="border-2 border-white bg-transparent text-white hover:bg-white hover:bg-opacity-10 flex items-center px-6 py-3 rounded-lg transition-colors duration-200"
+              >
+                Explore
+              </Button>
             </div>
           </div>
         </div>
